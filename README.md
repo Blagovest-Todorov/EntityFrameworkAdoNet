@@ -98,3 +98,27 @@ namespace AdoNet
         }
     }
 }
+
+
+
+
+///
+connectionString 
+
+sSqlConnectioon
+-open sqlConnection 
+
+ExecuteNonQuery  //  when I the query does not return result, returns how many rows in DB are affected
+-Insert, Delete, Update  // we do sth that does not expect to return a result !
+
+
+What we expect when the DB returns us aresult :   we expect one result record or manu records :
+1 . ExecuteScalar
+-If the return Query returns only one record (one column, not a table)
+
+
+2 . ExecuteReader  ///we read each row of the table as a record
+-if the select query returns more than one record –e. table
+///
+Command.Parameters.AddWithValue(“Id”, id)   -- > this we use it to avoid SQL Injection !! 
+///
